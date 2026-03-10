@@ -42,7 +42,7 @@
 
     <target name="report">
         <echo>Generating report...</echo>
-        <exec executable="python" output="dist/report.txt">
+        <exec executable="python3" output="dist/report.txt">
             <arg value="src/app.py"/>
         </exec>
     </target>
