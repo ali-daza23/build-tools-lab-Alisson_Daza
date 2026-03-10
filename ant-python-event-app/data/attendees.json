@@ -27,5 +27,12 @@
     "age": 70,
     "ticket_type": "vip",
     "identifier" : "EV5523"
+  },
+  {
+    "name": "Yoongi",
+    "email": "yoongi@example.com",
+    "age": 33,
+    "ticket_type": "vip",
+    "identifier" : "EV-0613"
   }
 ]
