@@ -36,6 +36,14 @@
             <arg value="tests"/>
             <arg value="data"/>
             <arg value="build.xml"/>
+            <arg value="dist/report.txt"/>
+        </exec>
+    </target>
+
+    <target name="report">
+        <echo>Generating report...</echo>
+        <exec executable="python" output="dist/report.txt">
+            <arg value="src/app.py"/>
         </exec>
     </target>
 </project>
