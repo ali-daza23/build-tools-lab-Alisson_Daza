@@ -21,5 +21,9 @@ def validate_attendee(attendee: dict) -> list:
 
     if attendee.get("ticket_type") not in VALID_TICKETS:
         errors.append("Invalid ticket type")
+    
+    registration_code = attendee.get("registration_code", "")
+    if not re.match(r"^EV-\d{4}$", registration_code):
+        errors.append("Invalid registration code")
 
     return errors
